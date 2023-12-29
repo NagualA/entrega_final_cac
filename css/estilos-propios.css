@@ -1,0 +1,1077 @@
+/* HEADER
+------------------------- */
+
+.navbar-brand img { max-width: 100px; }
+
+.bg-dark { background: #333a40!important; }
+
+.navbar-dark .navbar-nav .btn-compra-tickets { color: #25a342; }
+
+@media (min-width: 992px) {
+  .btn-compra-tickets {
+    border: 1px solid transparent;
+    border-radius: .8rem;
+  }
+  .btn-compra-tickets:hover,
+  .navbar-dark .navbar-nav .btn-compra-tickets.active {
+    background: #25a342;
+  }
+}
+
+.pt-section { padding-top: 7rem; }
+
+/* ESTILOS TITULOS
+-------------------------------------------------- */
+
+.titulo-gral {
+  text-align: center;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+.titulo-gral span {
+  display: block;
+  font-weight: 700;
+  font-size: 2.2rem;
+} 
+
+/* CAROUSEL
+-------------------------------------------------- */
+
+.bg-carousel-ba1 { background-image: url("../assets/img/ba1-min.jpg"); }
+.bg-carousel-ba2 { background-image: url("../assets/img/ba2-min.jpg"); }
+.bg-carousel-ba3 { background-image: url("../assets/img/ba3-min.jpg"); }
+
+.carousel-item {
+  background-size: cover;
+  background-position: center center;
+}
+.carousel-item svg { opacity: .5; }
+
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+.carousel-item {
+  height: 37rem;
+  min-height: 95vh;
+}
+
+/* SECCION MITAD IMG, MITAD TEXTO
+-------------------------------------------------- */
+
+.bg-aside1 {
+  background: #333a40;
+  padding: 2rem;
+}
+
+/* FORMULARIO CONVIERTETE EN ORADOR
+-------------------------------------------------- */
+
+.btn-form {
+  background: #96c93e;
+  color: #fff !important;
+}
+.btn-form:hover { background: #74aa17; }
+
+/* FORM COMPRAR TICKETS
+-------------------------------------------------- */
+
+#totalPago {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+/* FOOTER
+-------------------------------------------------- */
+
+#main-footer {
+  background: #1d3c4e;
+  color: #fff;
+  padding: 1.5rem;
+}
+
+#main-footer .nav-link {
+  color: #fff;
+  text-align: center;
+}
+#main-footer .nav-link:hover { opacity: .7; }
+
+@media (min-width: 992px) {
+  #main-footer .nav-link span { display: block; }
+}
+/*comprar tickets*/
+
+.propia{
+    display:block;
+}
+.none{
+    display:none;
+}
+.body{
+  display:grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  grid-template-areas: "header"
+                      "main"
+                      "footer";
+}
+.body header{
+  grid-area: header;
+}
+.body main{
+  grid-area: main;
+}
+.body footer{
+  grid-area: footer;
+}
+
+
+html {
+  font-size: 16px;
+}
+
+/*body*/ 
+body {
+    font-family: Monserrat, sans-serif;
+    background-color: white;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0
+  }
+
+
+/******************header******************/
+/*Header*/ 
+header{
+  background-color: #353A40;
+  color: #fff;
+  padding: 1.4rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  height: 4rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header__contenedorLogo {
+  display: flex;
+  flex-direction: row;
+  justify-content: start-flex;
+  flex: 0 0 200px;
+  text-wrap: none;
+
+}
+
+.header__contenedorLogo h2{
+  font-size: 18px;
+  font-weight: 500;
+
+}
+
+
+
+/*lista del header*/
+.header__contenedorEnlaces__listaHorizontal{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 8px;
+  gap:10px;
+  list-style: none;
+
+}
+
+.header__contenedorEnlaces__listaHorizontal li a{
+  margin-right: 4px;
+  font-size: 0.9rem;
+  color:#999DA0;
+  text-decoration: none;
+}
+
+.header__contenedorEnlaces__listaHorizontal li a:hover{
+
+  color:#999DA0;
+  text-decoration: underline;
+}
+
+
+
+.header__contenedorEnlaces__listaHorizontal li:nth-child(5) a{  padding-right: 0px;
+  color: #29A743; 
+}
+
+.header__contenedorEnlaces__listaHorizontal li:nth-child(5) a:hover{
+  color: #39e75c; 
+}
+
+
+.header__contenedorEnlaces__listaHorizontal li:nth-child(1) a{  color: white; 
+}
+
+
+
+
+
+
+
+/*adaptacion para mobile____________________*/
+@media (max-width: 767px) {
+  
+  header{
+    padding: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+  .header__contenedorLogo{
+    margin-right: 20px;
+    flex: 0 0 60%;
+  }
+
+
+  .header__contenedorEnlaces__listaHorizontal{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    align-content: flex-start;
+    gap: 2px;
+
+  }
+
+    .header__contenedorEnlaces__listaHorizontal li a{
+      margin-right: 0px;
+      font-size: 0.8rem;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/******************conferencia******************/
+
+/*imagen confe*/
+
+.main__conferencia{
+    height:600px;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url('./assets/img/ba1.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+
+
+.main__conferencia{
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-top: 10rem;
+  color:white;
+  display: flex;
+  flex-direction: column;
+}
+
+/*texto*/
+
+.main__conferencia__textos{
+  font-size:1rem;
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  text-align: right;
+}
+
+
+.main__conferencia__textos__five-columns{
+  grid-column: 7 / 13;
+
+}
+
+
+
+.main__conferencia__textos p{
+  line-height: 150%;
+  font-size: 1rem;
+}
+
+
+/*adaptacion para mobile____________________*/
+@media (max-width: 767px) {
+  .main__conferencia__textos h1  {
+    font-size: 2rem;
+      }
+      .main__conferencia__textos p {
+        font-size: 0.7rem;
+          }
+
+              }
+
+
+
+
+/*botones*/
+.main__conferencia__botones{
+  text-align: right;
+  padding: 20px 0px 20px 10px;
+  display:flex;
+  justify-content:flex-end;
+}
+
+
+
+.main__conferencia__botones a{
+display: inline-block;
+font-size: 1.10rem;
+padding: 12px 16px;
+color: #fff;
+border: #fff 1px solid;
+border-radius: 8px;
+cursor: pointer;
+text-decoration: none;
+}
+
+
+
+.main__conferencia__botones :nth-child(1){
+  margin-right: 10px; 
+}
+
+.main__conferencia__botones :nth-child(1):hover{
+
+backdrop-filter: blur(2px); 
+}
+
+
+.main__conferencia__botones :nth-child(2){
+  background-color: green;
+  border: none;
+}
+
+.main__conferencia__botones :nth-child(2):hover{
+  background-color: rgb(133, 245, 133);
+  color: rgb(22, 22, 22);
+  border: none;
+}
+
+
+
+/*adaptacion para mobile____________________*/
+@media (max-width: 767px) {
+  .main__conferencia__botones{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+  .main__conferencia__botones a{
+font-size: 0.8rem;
+padding: 12px 16px;
+width: 110px;
+text-align: center;}
+
+.main__conferencia__botones :nth-child(1){
+  margin-bottom: 10px; 
+  margin-right: 0px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************************************oradores*****************************/
+.main__oradores{
+  padding: 10%;
+  padding-top: 3rem;;
+}
+
+@media (max-width: 767px) {
+  .main__oradores{
+
+    padding-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
+}
+
+
+/***************************oradores títulos****************/
+.main__oradoresTitulo, .main__formulario__titulos, .tickets_textos{
+  text-align: center;
+  font-family: 'Lato', sans-serif, bold;
+}
+
+.main__oradoresTitulo h3, .main__formulario__titulos h3 , .tickets_textos h3{
+  font-size: 0.75rem;
+  }
+
+  .main__oradoresTitulo h2, .main__formulario__titulos h2, .tickets_textos h2{
+    font-size: 1.5rem;
+    line-height: 1rem;
+    }
+
+  @media (max-width: 767px) {
+    .main__oradoresTitulo h3, .main__formulario__titulos h3, .tickets_textos h3{
+      font-size: 0.8rem;
+      line-height: 0.9rem;
+      }
+    
+      .main__oradoresTitulo h2, .main__formulario__titulos h2, .tickets_textos h2{
+        font-size: 1rem;
+        }
+  }
+
+
+
+/* *******************oradores cards************ */
+
+
+.main__oradores__cards {
+  display: flex; /* Habilita el modo flexbox */
+  flex-direction: row;
+  width: 100%;
+  justify-content:space-between; /* Distribuye los contenedores con espacio entre ellos */
+  align-items:top;
+  gap: 2%;
+}
+
+
+
+
+.main__oradores__cards__card{
+  border:rgb(152, 152, 152) solid 0.5px;
+  padding: 0;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items:stretch;
+
+
+}
+
+
+
+@media (max-width: 767px) {
+  .main__oradores__cards {
+    display: flex; /* Habilita el modo flexbox */
+    flex-direction: column;
+    width: 80%;
+    justify-content:center;  }
+
+.main__oradores__cards__card{
+margin-bottom: 15px;
+    }
+
+.main__oradores__cards__card:nth-child(3){
+  margin-bottom: 0px;
+          }
+      
+
+
+}
+
+
+
+
+.main__oradores__cards__card__divFoto{
+width: auto;
+overflow: hidden; /*Hace que la imagen no exceda en contenedor */
+}
+
+.main__oradores__cards__card__divFoto img{
+
+width: 100%;
+height: 100%;
+}
+
+.main__oradores__cards__card__divFoto img:hover{
+
+transform: scale(1.2);
+transition: transform  0.9s ease-in-out;
+  }
+  
+  
+
+
+.main__oradores__cards__card__divTextos{
+margin-top:1rem;
+padding:   1.5rem;
+}
+
+
+@media (max-width: 767px) {
+  .main__oradores__cards__card__divTextos{
+    margin-top:0.5rem;
+    padding:   1rem;
+    line-height: 1.1;
+    }
+      
+}
+
+.main__oradores__cards__card__divTextos__botones{
+  display: flex;
+  justify-content:start;
+  margin: 0;
+
+}
+
+
+.main__oradores__cards__card__divTextos__botones__botonDos{
+  margin-left: 8px;
+}
+
+/* Estilos para el botón */
+.main__oradores__cards__card__divTextos__botones.botonUno, .main__oradores__cards__card__divTextos__botones.botonDos{
+  display: inline-block;
+  font-size: 12px;
+  padding: 4px 12px;
+  color: #232629;
+  background-color: #fec107;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.main__oradores__cards__card__divTextos__botones .botonDos{
+  background-color:#17A1BD;
+  color: white;
+}
+
+.botonDos{
+  margin-left:4px;
+}
+
+/* color del último botón */
+.main__oradores__cards__card__divTextos__botones.botonDos.terceraCard  {
+  background-color:#DC3545;
+}
+
+.main__oradores__cards__card__divTextos__botones.botonUno.terceraCard  {
+  background-color:#94a0aa;
+}
+
+
+
+/* falta arreglar varios hovers*/
+.primeraCard.botonUno:hover, .segundaCard.botonUno:hover {
+  background-color: #d4a519;
+}
+
+.primeraCard.botonDos:hover{
+  background-color: #076679;
+
+}
+
+.segundaCard.botonDos:hover{
+  background-color: #087c93;
+}
+
+.terceraCard.botonUno:hover{
+  background-color:#c8d5e1;
+}
+
+.terceraCard.botonDos:hover{
+  background-color:#863039;
+}
+
+
+.main__oradores__cards__card__divTextos__Titulo h3{
+
+  font-size: 1.5rem;
+}
+.main__oradores__cards__card__divTextos__Titulo__Textos p{
+  font-family: Montserrat;
+  font-size: 0.7rem;
+  line-height: 1.8;
+}
+
+
+@media (max-width: 767px) {
+  .main__oradores__cards__card__divTextos__Titulo h3{
+
+    font-size: 1.4rem;
+    line-height: 1rem;
+  }
+
+  .main__oradores__cards__card__divTextos__Titulo__Textos p{
+    font-family: Montserrat;
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+      
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************Section lugar y fecha******************/
+.main__LugarYFecha{
+height: 65vh;
+display:flex;
+flex-direction: row;
+}
+
+
+.main__LugarYFecha__hijo{
+  flex:1;
+
+}
+
+.main__LugarYFecha__foto{
+overflow: hidden;
+background-image: url('./assets/img/honolulu.jpg');
+background-size: center;
+background-position:center;
+}
+
+
+.main__LugarYFecha__datos{
+  background-color: #353A40;
+  color: white;
+  padding:1rem 1.5rem 1.5rem 2rem;
+}
+
+.main__LugarYFecha__datos h2{
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.main__LugarYFecha__datos p{
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+
+
+.main__LugarYFecha__datos a{
+  display: inline-block;
+  font-size: 0.9rem;
+  padding: 8px 12px;
+  color: #fff;
+  border: #fff 1px solid;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+@media (max-width: 767px) {
+  .main__LugarYFecha{
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    }
+    
+  .main__LugarYFecha__datos h2{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+
+  .main__LugarYFecha__datos p{
+    font-size: 0.7rem;
+    line-height: 1.5rem;
+  }
+  
+  
+  .main__LugarYFecha__datos a{
+    display: inline-block;
+    font-size: 0.7rem;
+    padding: 8px 12px;
+    color: #fff;
+    border: #fff 1px solid;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+      
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Formulario*/ 
+
+
+
+.main__formulario{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 8rem 2rem 8rem;
+}
+
+
+/* los estilos del main_formulario_títulos están junto con los estilos de los títulos de las cards*/
+.main__formulario__titulos p {
+  font-size: 0.9rem;
+}
+
+.main__formulario__titulos p a{
+  color: black;
+}
+
+.main__formulario__camposFormulario{
+width: 60%;
+margin: 0 auto;
+display: flex;
+flex-direction: column;
+gap: 4px;
+}
+
+.main__formulario__camposFormulario__NombreYApellido{
+  display: flex;
+
+}
+
+.main__formulario__camposFormulario__NombreYApellido__Nombre{
+  margin-right: 4px;
+  }
+  
+
+
+.main__formulario__camposFormulario__NombreYApellido input{
+  flex:1;
+  height: 1.5rem;
+
+}
+
+.main__formulario__camposFormulario__Textarea{
+  display: flex;
+  flex-direction: column;
+  height: 30vh;
+}
+
+
+.main__formulario__camposFormulario__Textarea textarea{
+  flex:1; 
+
+}
+
+.main__formulario__camposFormulario__Textarea p{
+font-size: 0.6rem; 
+padding: 0rem;
+margin: 2px 0 8px 0;
+}
+
+#comentario{
+  font-family: Monserrat, sans-serif;
+  font-size:1rem;
+}
+
+#nombre, #apellido{
+  font-family: Monserrat, sans-serif;
+  font-size:0.7em;
+}
+
+    
+.main__formulario__camposFormulario__boton input {
+  background-color: #96C93E;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.main__formulario__camposFormulario__boton input:hover:hover{
+  background-color: #7f9f4b;
+
+}
+
+/******************formulario mobile****************************/ 
+
+@media (max-width: 767px) {
+
+  
+.main__formulario{
+
+  padding: 2rem 4rem 2rem 4rem;
+}
+  
+  .main__formulario__camposFormulario__NombreYApellido{
+    display: flex;
+    flex-direction: column;
+    }
+  
+
+  .main__formulario__camposFormulario{
+    width:100%;
+    flex-direction: column;
+  }
+  
+.main__formulario__camposFormulario__NombreYApellido__Nombre{
+  margin-bottom: 4px;
+  margin-right: 0px;
+  }
+  .main__formulario__titulos p {
+    font-size: 0.8rem;
+  }
+  
+}
+
+
+
+
+/********************************Footer************************************/ 
+
+
+
+.footer{
+  background-image: linear-gradient(to right, #1d3744, #1d3e4f, #1d4459, #1d4b65, #1d5270);
+  height: 16vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0rem 10rem;
+
+}
+
+.footer__listaHorizontal{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 3rem;
+  margin: 0;
+  padding-inline-start: 0;
+  }
+
+
+  
+.footer__listaHorizontal li{
+  flex: 1;
+}
+
+
+.footer__listaHorizontal li:first-child{
+  padding-left: 0px;
+}
+
+
+.footer__listaHorizontal a{
+  font-size:0.9rem;
+  color:white;
+  text-decoration: none;
+}
+
+.footer__listaHorizontal a:hover{
+
+  text-decoration: underline;
+}
+
+
+
+
+/******************footer mobile****************************/ 
+
+@media (max-width: 767px) {
+
+  .footer{
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0rem 0rem;
+  
+  }
+  
+  .footer__listaHorizontal{
+
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0;
+    padding-inline-start: 0;
+    }
+
+
+    .footer__listaHorizontal a{
+      font-size:0.7rem;
+  
+    }
+    
+  }  
+
+
+
+
+
+
+
+
+
+
+
+
+/*pagina tickets*/ 
+
+#main_tickets{
+padding: 1rem 8rem 0rem 8rem;
+}
+
+.tickets_card{
+  border: #44b7cf 2px solid;
+  border-radius: 0;
+ 
+}
+
+.custom-padding {
+  padding: 6px; 
+}
+ 
+
+.card_2{
+border: aqua 2px solid;
+}
+
+.card_3{
+  border: yellow 2px solid;
+
+ }
+ .card_1:hover{
+  background-color:#5cdef8;
+ }
+
+ .card_2:hover{
+  background-color: rgb(159, 243, 243);
+ }
+
+ .card_3:hover{
+  background-color: rgb(244, 244, 156);
+
+ }
+
+.card-text{
+  font-size:0.8rem;
+  font-weight: 300;
+}
+
+.card-numbers{
+  font-size:1.1rem;
+  font-weight: 600; 
+}
+
+.card-subtitle{
+  font-weight: 400; 
+}
+
+.card-title, .card-subtitle, .card-text{
+  line-height: 1.8;
+}
+
+.tickets_textos{
+  padding: 1rem 0 1rem 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*mi css*/ 
+
+
+.formulario_total{
+  height:3rem;
+  width:100%;
+  background-color:var(--bs-info);
+}
+.formulario_total_parrafo{
+  margin-bottom:0px;
+}
+
+.formulario_boton {
+  background-color: rgb(36, 182, 36);
+}
+
+/*tipografía*/ 
+
+
+h1{
+  margin:0%
+}
+
+h4{
+  margin: 0%
+}
